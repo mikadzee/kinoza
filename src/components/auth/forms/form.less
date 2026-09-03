@@ -1,0 +1,38 @@
+.auth-form {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  width: 100%;
+  & > .fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  & > .reset-pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > button {
+      font-size: 14px;
+      color: #A7A297;
+    }
+
+    & > a {
+      color: #FFB000;
+      font-size: 14px;
+      font-weight: 900;
+    }
+  }
+
+  & > .submit {
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+    border-radius: 1000px;
+    background: #FFB000;
+    color: #050609;
+  }
+}

@@ -13,8 +13,6 @@ export const useAuthStore = defineStore("auth", () => {
     dataUser.value = null;
   }
 
-
-
   return {
     dataUser,
     setUser,

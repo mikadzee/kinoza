@@ -12,28 +12,12 @@ const routes = [
         component: () => import("@/views/Home.vue"),
       },
       {
-        path: "",
-        name: "home",
-        component: () => import("@/views/Home.vue"),
+        path: "auth",
+        name: "auth",
+        component: () => import("@/views/Auth.vue"),
       },
     ]
   },
-  {
-    path: "/auth",
-    component: () => import("@/layouts/Auth.vue"),
-    children: [
-      {
-        path: "login",
-        name: "login",
-        component: () => import("@/views/Login.vue")
-      },
-      {
-        path: "register",
-        name: "register",
-        component: () => import("@/views/Register.vue")
-      },
-    ]
-  }
 ]
 
 
