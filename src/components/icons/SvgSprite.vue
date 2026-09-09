@@ -124,5 +124,112 @@
           stroke-linecap="round"
       />
     </symbol>
+
+    <!-- Уведомления -->
+    <symbol id="notification" viewBox="0 0 24 24">
+      <path
+          d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+      />
+
+      <path
+          d="M10 21H14"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+      />
+    </symbol>
+
+    <!-- Пользователи / просмотры -->
+    <symbol id="users" viewBox="0 0 24 24">
+      <path
+          d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+      />
+
+      <circle
+          cx="9"
+          cy="7"
+          r="4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+      />
+
+      <path
+          d="M22 21V19C21.9993 18.1137 21.7044 17.2528 21.1614 16.5523C20.6184 15.8519 19.8581 15.3516 19 15.13"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+      />
+
+      <path
+          d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45768C17.623 10.1593 16.8604 10.6597 16 10.88"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+      />
+    </symbol>
+
+    <!-- Рейтинг -->
+    <symbol id="star" viewBox="0 0 24 24">
+      <path
+          d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+      />
+    </symbol>
+
+    <!-- Плюс -->
+    <symbol id="plus" viewBox="0 0 24 24">
+      <path
+          d="M12 5V19"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+      />
+
+      <path
+          d="M5 12H19"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+      />
+    </symbol>
+
+    <!-- Крестик -->
+    <symbol id="close" viewBox="0 0 24 24">
+      <path
+          d="M18 6L6 18"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+      />
+
+      <path
+          d="M6 6L18 18"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+      />
+    </symbol>
   </svg>
 </template>
