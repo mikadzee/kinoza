@@ -231,5 +231,18 @@
           stroke-linecap="round"
       />
     </symbol>
+
+
+    <!-- Смотреть / Play -->
+    <symbol id="play" viewBox="0 0 24 24">
+      <path
+          d="M8 5.5V18.5C8 19.67 9.29 20.38 10.28 19.75L20.12 13.25C21.03 12.66 21.03 11.34 20.12 10.75L10.28 4.25C9.29 3.62 8 4.33 8 5.5Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+      />
+    </symbol>
   </svg>
 </template>
