@@ -4,13 +4,14 @@
       <span>A</span>
     </RouterLink>
     <RouterLink to="/auth" v-else class="no-account">
-      <span>Войти</span>
+      <SvgIcon icon="register" />
     </RouterLink>
   </div>
 </template>
 
 <script setup>
   import { useAuthStore} from "@/stores/auth.ts";
+  import SvgIcon from "@/components/icons/SvgIcon.vue";
 
   const store = useAuthStore();
 

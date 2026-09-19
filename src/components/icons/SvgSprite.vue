@@ -244,5 +244,41 @@
           stroke-linejoin="round"
       />
     </symbol>
+
+    <!-- Регистрация -->
+    <symbol id="register" viewBox="0 0 24 24">
+      <circle
+          cx="8"
+          cy="8"
+          r="4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+      />
+
+      <path
+          d="M2 21V19C2 16.7909 3.79086 15 6 15H10C12.2091 15 14 16.7909 14 19V21"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+      />
+
+      <path
+          d="M19 5V11"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+      />
+
+      <path
+          d="M16 8H22"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+      />
+    </symbol>
   </svg>
 </template>
