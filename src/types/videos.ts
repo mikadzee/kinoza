@@ -82,29 +82,3 @@ export interface VideoProgress {
 
 
 
-
-
-function name(o: string): never {
-  throw new Error(o)
-}
-
-function name():never {
-  while (true) {}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
