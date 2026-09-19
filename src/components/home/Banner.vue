@@ -62,5 +62,4 @@ const dataInfo = computed(() => {
 
 <style lang="less" scoped>
 @import "./banner.less";
-
 </style>

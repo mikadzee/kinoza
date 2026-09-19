@@ -1,3 +1,5 @@
+@import "@/assets/styles/animation-presets.less";
+
 .nav-app {
 
   & > .list {
@@ -7,14 +9,17 @@
     gap: 26px;
 
     & > li > a {
+      .interactive-scale();
+
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       gap: 5px;
+      color: #8D887E;
 
-      & > * {
-        color: #8D887E;
+      &:hover {
+        color: #fff;
       }
 
       & > svg {
@@ -26,8 +31,9 @@
         font-size: 12px;
       }
 
-      &.router-link-exact-active > * {
+      &.router-link-exact-active {
         color: #fff;
+        transform: scale(1.03);
       }
     }
   }

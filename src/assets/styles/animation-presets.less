@@ -1,0 +1,42 @@
+@import "./animations.less";
+
+
+// база транситион + увеличение
+.interactive-scale() {
+  .interactive();
+  .hover-scale();
+}
+
+
+// увеличение + свечение
+.interactive-scale-glow() {
+  .interactive();
+  .hover-scale();
+  .hover-glow();
+}
+
+
+// увеличение + glass эффект
+.interactive-scale-glass() {
+  .interactive();
+  .hover-scale();
+  .hover-glass();
+}
+
+
+// плей иконка
+.interactive-play-scale-glow() {
+  .interactive();
+  .hover-scale();
+  .hover-glow();
+  .play-animation();
+}
+
+
+// плюс иконка
+.interactive-plus-scale-glass() {
+  .interactive();
+  .hover-scale();
+  .hover-glass();
+  .plus-animation();
+}

@@ -1,0 +1,179 @@
+// Плавность для интерактивных элементов
+.interactive() {
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    opacity 0.18s ease;
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+
+// Легкий подъём кнопки
+.hover-lift() {
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.97);
+  }
+}
+
+
+// Увеличение
+.hover-scale() {
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+
+// Свечение для фиолетовых кнопок
+.hover-glow() {
+  &:hover {
+    box-shadow:
+      0 8px 30px rgba(139, 78, 255, 0.28),
+      0 0 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  &:active {
+    box-shadow:
+      0 4px 18px rgba(139, 78, 255, 0.2);
+  }
+}
+
+
+// Для темных / glass кнопок
+.hover-glass() {
+  &:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &:active {
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+
+
+// Анимация иконки вправо
+.icon-move() {
+  svg {
+    transition: transform 0.18s ease;
+  }
+
+  &:hover svg {
+    transform: translateX(3px);
+  }
+
+  &:active svg {
+    transform: translateX(1px) scale(0.92);
+  }
+}
+
+
+// Для play-кнопки
+.play-animation() {
+  svg {
+    transition:
+      transform 0.2s ease,
+      filter 0.2s ease;
+  }
+
+  &:hover svg {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 10px currentColor);
+  }
+
+  &:active svg {
+    transform: scale(0.9);
+  }
+}
+
+
+// Для кнопки с плюсиком
+.plus-animation() {
+  svg {
+    transition: transform 0.25s ease;
+  }
+
+  &:hover svg {
+    transform: rotate(90deg);
+  }
+
+  &:active svg {
+    transform: rotate(90deg) scale(0.85);
+  }
+}
+
+
+// Небольшое затемнение
+.hover-opacity() {
+  &:hover {
+    opacity: 0.82;
+  }
+
+  &:active {
+    opacity: 0.65;
+  }
+}
+
+
+// Эффект блика
+.hover-shine() {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+    pointer-events: none;
+  }
+
+  &:hover::before {
+    left: 130%;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .interactive,
+  .hover-lift,
+  .hover-scale,
+  .hover-glow,
+  .hover-glass,
+  .icon-move,
+  .play-animation,
+  .plus-animation,
+  .hover-opacity,
+  .hover-shine {
+    transition: none !important;
+
+    svg,
+    &::before {
+      transition: none !important;
+    }
+  }
+}

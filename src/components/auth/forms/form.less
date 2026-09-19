@@ -1,3 +1,5 @@
+@import "@/assets/styles/animation-presets.less";
+
 .auth-form {
   display: flex;
   gap: 12px;
@@ -26,6 +28,8 @@
   }
 
   & > .submit {
+    .interactive-scale();
+    transition: 0.3s all;
     line-height: 50px;
     font-size: 16px;
     text-align: center;

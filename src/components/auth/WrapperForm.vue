@@ -2,11 +2,10 @@
   <div class="auth-wrapper-form">
     <h2>Продолжить просмотр</h2>
 
-    <SwitchForm class="switch" @toggleMode="(currentMode:'register' | 'login')=> mode = currentMode"/>
-
+    <SwitchForm class="switch" @toggleForm="(toggle:boolean)=> isLogin = toggle"/>
     <div class="wrapper">
       <KeepAlive>
-        <LoginForm @send="login" v-if="mode === 'login'"/>
+        <LoginForm @send="login" v-if="isLogin"/>
         <RegisterForm @send="register" v-else/>
 
       </KeepAlive>
@@ -21,7 +20,7 @@ import {ref} from "vue";
 import LoginForm from "@/components/auth/forms/LoginForm.vue";
 import RegisterForm from "@/components/auth/forms/RegisterForm.vue";
 
-const mode = ref<'register' | 'login'>('login');
+const isLogin = ref<boolean>(false);
 
 function register(data: DataForm) {
   console.log(data)

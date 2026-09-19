@@ -1,25 +1,22 @@
 <template>
-  <div class="switch-form">
-    <div class="runner" :class="classMode"></div>
-
-    <button :class="mode == 'login' ? 'active' : ''" @click="sendMode('login')">Вход</button>
-    <button :class="mode == 'register' ? 'active' : ''" @click="sendMode('register')">Регистрация</button>
+  <div :class="['switch-form', {'active': isLogin}]">
+    <div class="runner"></div>
+    <button @click="isLogin = true">Вход</button>
+    <button @click="isLogin = false">Регистрация</button>
   </div>
 </template>
 
 <script setup lang="ts">
-import {computed, ref} from "vue";
+import {ref, watch} from "vue";
 
-const mode = ref<'login'|'register'>('login');
-const classMode = computed<string>(() => mode.value === 'login'? 'right' : 'left');
+const isLogin = ref<boolean>(false);
 const emit = defineEmits<{
-  (e: 'toggleMode', mode: string): void
+  (e: 'toggleForm', toggle: boolean): void
 }>();
 
-function sendMode(type: 'login'|'register') {
-  mode.value = type;
-  emit('toggleMode', type);
-}
+watch(isLogin, () => {
+  emit('toggleForm', isLogin.value);
+})
 </script>
 
 <style lang="less">
