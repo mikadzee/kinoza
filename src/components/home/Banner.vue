@@ -60,6 +60,6 @@ const dataInfo = computed(() => {
 });
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 @import "./banner.less";
 </style>

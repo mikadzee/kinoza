@@ -13,6 +13,20 @@ export interface Genre {
   name: string;
 }
 
+export interface LiveRoom {
+  id: number;
+
+  title: string;
+
+  peoples: Array<{
+    id: number;
+    name: string;
+    avatar: string;
+  }>;
+
+  video: Video;
+}
+
 export interface Video {
   id: number;
 
@@ -21,17 +35,17 @@ export interface Video {
 
   type: VideoType;
 
-  poster: string | null; // аватарка
-  backdrop: string | null; // болшая аватарка
+  poster: string | null;
+  backdrop: string | null;
 
-  genres: Genre[]; // жанры
+  genres: Genre[];
 
-  releaseYear: number; // год выпуска
-  durationSec: number | null; // скок идет в сек
+  releaseYear: number;
+  durationSec: number | null;
 
-  rating: number | null; // рейтинг
+  rating: number | null;
 
-  isActive: boolean; // можно ли показывать пользователю
+  isActive: boolean;
 
   createdAt: string;
   updatedAt: string;
@@ -78,7 +92,3 @@ export interface VideoProgress {
 
   updatedAt: string;
 }
-
-
-
-

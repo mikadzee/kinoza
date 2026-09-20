@@ -1,4 +1,5 @@
 @import "@/assets/styles/animation-presets.less";
+@import "@/assets/styles/vars.less";
 
 .video-backdrop {
   padding: 48px;
@@ -40,8 +41,9 @@
           gap: 4px;
 
           & > span {
-            color: #F3F4F6;
+            color: @textPrimary;
             font-size: 14px;
+            font-family: "Inter", sans-serif;
             font-weight: 900;
           }
 
@@ -55,21 +57,24 @@
 
 
         & > p {
-          color: #9CA3AF;
+          color: @textPrimary;
           font-size: 14px;
+          font-family: "Inter", sans-serif;
         }
 
       }
 
       & > .title {
         font-size: 64px;
-        color: #F3F4F6;
+        color: @textPrimary;
         font-weight: 900;
+        font-family: "Inter", sans-serif;
       }
 
       & > .description {
-        color: #9CA3AF;
+        color: @textPrimary;
         font-size: 16px;
+        font-family: "Inter", sans-serif;
       }
     }
 
@@ -83,6 +88,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
         gap: 8px;
         border-radius: 12px;
         max-width: 217px;
